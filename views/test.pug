@@ -85,12 +85,64 @@ block content
         .right.floated.meta= "Yesterday"
         |
         a(href='/user/bblueberryy')
-          img.ui.avatar.image(src='/profile_pictures/image-31.png')
+          img.ui.avatar.image(src='/profile_pictures/IMG_8283.jpg')
           span='Cassie Reed'
       .image
-        img.post(src="/post_pictures/"+"IMG_20170129_131732.jpg")
+        img.post(src="/post_pictures/"+"IMG_8129.jpg")
       .content
-        .description="taking a break from #pastaweek for some crab rangoons... made with leftover pasta dough!! :D "
+        .description="Wow, look at this awesome burger!!! :D "
+        //-.right.floated.meta
+          i.icon.checkmark
+          | Seen by 12
+      .three.ui.bottom.attached.icon.buttons
+        .ui.reply.button(tabindex='0')
+          i.reply.icon
+          |  Reply
+        .ui.flag.button(tabindex='0')
+          i.flag.icon
+          |  Flag
+        .ui.labeled.button(tabindex='0')
+          .ui.like.button
+            i.heart.icon
+            |  Like
+          a.ui.basic.red.left.pointing.label.count=2
+      
+      //-.content
+        .ui.comments
+          .comment
+            a.avatar
+              img(src='/profile_pictures/155.jpg')
+            .content
+              a.author Emma Hanson
+              .metadata
+                span.date 1527025081548
+                i.heart.icon
+                |  0 Likes
+              .text
+                | when will you get it into your head that nobody likes your stupid ass.
+              .actions
+                a.reply Reply
+                a.like Like
+                a.flag Flag
+      .content
+        //-.description(style="text-align:center;background:#E8E8E8")="How is Cassie Feeling?"
+        .ui.fluid.left.labeled.right.icon.input
+          .ui.label            
+            img.ui.avatar.image(src='/profile_pictures/image-18.png', name="Jane Doe")
+          input.newcomment(type='text', placeholder='Write a Message')
+          i.big.send.link.icon
+    
+    .ui.fluid.card.test(postID="3")
+      .content
+        .right.floated.meta= "Yesterday"
+        |
+        a(href='/user/bblueberryy')
+          img.ui.avatar.image(src='/profile_pictures/IMG_8283.jpg')
+          span='Cassie Reed'
+      .image
+        img.post(src="/post_pictures/"+"IMG_7685.jpg")
+      .content
+        .description="Wow, look at this awesome burger!!! :D "
         //-.right.floated.meta
           i.icon.checkmark
           | Seen by 12
@@ -131,7 +183,6 @@ block content
             img.ui.avatar.image(src='/profile_pictures/image-18.png', name="Jane Doe")
           input.newcomment(type='text', placeholder='Write a Message')
           i.big.send.link.icon
-      
 
     .ui.fluid.card(postID="2")
       .content
